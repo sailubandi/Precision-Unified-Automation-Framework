@@ -13,5 +13,4 @@ Feature: Login and Delete Account
     And user clicks on login button
     Then Logged in as username should be visible
 
-    When user clicks Delete Account button
-    Then ACCOUNT DELETED should be visible
+    

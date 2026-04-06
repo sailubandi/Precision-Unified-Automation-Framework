@@ -16,6 +16,8 @@ public class LoginPage extends Basepage {
     private By passwordInput = By.xpath("//input[@data-qa='login-password']");
     private By loginBtn = By.xpath("//button[@data-qa='login-button']");
     private By errormessage=By.xpath("//p[normalize-space()='Your email or password is incorrect!']");
+    public static String savedEmail;
+    public static String savedPassword;
     public boolean isNewUserVisible() {
         //return false;
     	return WaitUtils.waitForElement(newUserText).isDisplayed();
@@ -36,6 +38,7 @@ public class LoginPage extends Basepage {
         //return false;
     	return WaitUtils.waitForElement(loginText).isDisplayed();
     }
+    
     public void enterLoginDetails(String email,String password) {
         WaitUtils.waitForElement(emailInput)
                 .sendKeys(email);

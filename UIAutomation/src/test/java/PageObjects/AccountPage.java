@@ -8,7 +8,7 @@ public class AccountPage extends Basepage {
 
     private By accountCreated = By.xpath("//b[text()='Account Created!']");
     private By continueBtn = By.xpath("//a[@data-qa='continue-button']");
-    private By loggedInText = By.xpath("//a[contains(text(),'Logged in as')]");
+    private By loggedInText = By.xpath("//a[contains(.,'Logged in as')]");
     private By deleteAccountBtn = By.xpath("//a[contains(text(),'Delete Account')]");
     private By accountDeleted = By.xpath("//b[text()='Account Deleted!']");
 

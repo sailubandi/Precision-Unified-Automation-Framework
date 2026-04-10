@@ -1,0 +1,46 @@
+20:12:01.716 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Signup button
+20:12:02.068 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - User clicks Continue Shopping button
+20:12:02.998 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - User hovers over second product and adds it to cart
+20:12:03.319 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - clicks on login button
+20:12:03.359 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - clicks on login button
+20:12:04.774 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Filling account information (title, password, DOB)
+20:12:05.069 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - User clicks View Cart button
+20:12:06.556 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - verifying error message is displayed or not
+20:12:08.004 [TestNG-PoolService-5] INFO  stepdefinitions.TC5_RemoveFromCartSteps - User clicks Cart button
+20:12:09.037 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - Verifying user is logged in
+20:12:10.266 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Selecting newsletter and offers checkboxes
+20:12:11.612 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - Verifying both products are visible in the cart
+20:12:12.190 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Filling address details
+20:12:12.984 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - Verifying prices, quantity and total price of products
+20:12:14.687 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Create Account button
+20:12:18.787 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Verifying Account Created message
+20:12:18.836 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Continue button
+20:12:21.694 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Verifying user is logged in
+20:12:21.748 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Delete Account button
+20:12:24.370 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Verifying Account Deleted message
+20:12:24.441 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Continue after deletion
+20:16:06.944 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - Launching browser
+20:16:06.944 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - Launching browser
+20:16:06.944 [TestNG-PoolService-5] INFO  stepdefinitions.TC1_RegisterSteps - Launching browser
+20:16:06.944 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - Launching browser
+20:16:06.944 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Launching browser
+20:16:06.957 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - Navigating to URL: https://automationexercise.com
+20:16:06.957 [TestNG-PoolService-5] INFO  stepdefinitions.TC1_RegisterSteps - Navigating to URL: https://automationexercise.com
+20:16:06.957 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - Navigating to URL: https://automationexercise.com
+20:16:06.957 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Navigating to URL: https://automationexercise.com
+20:16:06.957 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - Navigating to URL: https://automationexercise.com
+20:16:08.119 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - Verifying home page is visible
+20:16:11.866 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Verifying home page is visible
+20:16:11.914 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - Verifying home page is visible
+20:16:12.059 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - Verifying home page is visible
+20:16:12.139 [TestNG-PoolService-5] INFO  stepdefinitions.TC1_RegisterSteps - Verifying home page is visible
+20:16:12.269 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Signup/Login button
+20:16:12.270 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Signup/Login button
+20:16:12.279 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - Clicking Signup/Login button
+20:16:12.293 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - User clicks on Products button
+20:16:12.436 [TestNG-PoolService-5] INFO  stepdefinitions.TC5_RemoveFromCartSteps - User adds products to cart
+20:16:16.352 [TestNG-PoolService-2] INFO  stepdefinitions.TC1_RegisterSteps - verifing login to your account test is visible
+20:16:16.686 [TestNG-PoolService-3] INFO  stepdefinitions.TC1_RegisterSteps - verifing login to your account test is visible
+20:16:16.719 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Verifying New User Signup text
+20:16:17.363 [TestNG-PoolService-4] INFO  stepdefinitions.TC1_RegisterSteps - Entering name and email
+20:16:17.363 [TestNG-PoolService-1] INFO  stepdefinitions.TC1_RegisterSteps - User hovers over first product and adds it to cart

@@ -4,6 +4,7 @@ import constants.FrameworkConstants;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public final class ConfigReader {
@@ -13,27 +14,40 @@ public final class ConfigReader {
     private ConfigReader() {}
 
     static {
-        try (FileInputStream fis =
-                     new FileInputStream(FrameworkConstants.CONFIG_FILE_PATH)) {
+        try {
+            InputStream input;
 
-            properties.load(fis);
+            // First try with FrameworkConstants path
+            try {
+                input = new FileInputStream(FrameworkConstants.CONFIG_FILE_PATH);
+            } catch (IOException e) {
+                // Fallback: try to load from resources
+                input = ConfigReader.class
+                        .getClassLoader()
+                        .getResourceAsStream("config.properties");
+            }
 
-        } catch (IOException e) {
-            throw new RuntimeException(
-                    "Failed to load config.properties from: "
-                            + FrameworkConstants.CONFIG_FILE_PATH, e);
+            if (input == null) {
+                throw new RuntimeException("config.properties not found in resources or at path: "
+                        + FrameworkConstants.CONFIG_FILE_PATH);
+            }
+
+            properties.load(input);
+
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to load config.properties", e);
         }
     }
 
     public static String get(String key) {
-
         String value = properties.getProperty(key);
-
         if (value == null || value.isEmpty()) {
-            throw new RuntimeException(
-                    "Key not found in config.properties: " + key);
+            throw new RuntimeException("Key not found in config.properties: " + key);
         }
-
         return value;
+    }
+
+    public static String get(String key, String defaultValue) {
+        return properties.getProperty(key, defaultValue);
     }
 }

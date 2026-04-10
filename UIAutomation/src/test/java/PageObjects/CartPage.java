@@ -92,7 +92,21 @@ public class CartPage extends Basepage {
          return false;
          return true;
      }
+     public void removeProduct(int index) {
 
+ 	    List<WebElement> items = WaitUtils.waitForAllVisibleElements(cartItems);
+ 	    WebElement item = items.get(index);
+
+ 	    String name = item.findElement(productName).getText();
+ 	    productname = name;
+
+ 	    WebElement delete = item.findElement(deleteBtn);
+ 	    delete.click();
+
+ 	    WaitUtils.waitForInvisibility(By.xpath("//tr[contains(@id,'product-')]//a[text()='" + name + "']"));
+
+ 	    productPage.removeFromLocalCart(name);
+ 	}
     
     public boolean verifyGrandTotal() {
 

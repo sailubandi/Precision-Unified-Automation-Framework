@@ -76,6 +76,11 @@ public class ProductPage extends Basepage {
     public int getGrandTotal() {
         return grandTotal;
     }
-
+    public void removeFromLocalCart(String name) {
+        if (cartMap.containsKey(name)) {
+            grandTotal -= cartMap.get(name).get("total");
+            cartMap.remove(name);
+        }
+    }
  
 }

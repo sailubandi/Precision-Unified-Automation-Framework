@@ -1,39 +1,28 @@
-16:32:06.712 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Delete Account button
-16:32:09.771 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying Account Deleted message
-16:32:09.839 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Continue after deletion
-18:56:55.734 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Launching browser
-18:56:55.734 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Launching browser
-18:56:55.734 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Launching browser
-18:56:55.759 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
-18:56:55.759 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
-18:56:55.759 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
-18:56:57.234 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
-18:57:00.151 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
-18:57:00.445 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
-18:57:00.556 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
-18:57:00.592 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
-18:57:00.685 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
-18:57:04.187 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
-18:57:04.412 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
-18:57:04.500 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying New User Signup text
-18:57:04.684 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - entering eamil and password
-18:57:04.978 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - entering incorrect eamil and password
-18:57:05.038 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Entering name and email
-18:57:08.385 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Signup button
-18:57:08.789 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - clicks on login button
-18:57:08.812 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - clicks on login button
-18:57:12.068 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Filling account information (title, password, DOB)
-18:57:12.590 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - verifying error message is displayed or not
-18:57:14.275 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Selecting newsletter and offers checkboxes
-18:57:14.646 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
-18:57:14.876 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Clicking Delete Account button
-18:57:14.878 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Filling address details
-18:57:17.432 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Create Account button
-18:57:17.760 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Verifying Account Deleted message
-18:57:18.131 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Clicking Continue after deletion
-18:57:21.981 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying Account Created message
-18:57:22.161 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Continue button
-18:57:25.466 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
-18:57:25.700 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Delete Account button
-18:57:28.848 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying Account Deleted message
-18:57:29.033 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Continue after deletion
+13:03:40.170 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+13:03:41.729 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - User clicks Cart button
+13:03:42.203 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying both products are visible in the cart
+13:03:42.733 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+13:03:42.862 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - entering incorrect eamil and password
+13:03:43.198 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying prices, quantity and total price of products
+13:03:43.625 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+13:03:43.845 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - entering eamil and password
+13:03:44.036 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying New User Signup text
+13:03:44.150 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Entering name and email
+13:03:44.999 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup button
+13:03:46.582 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - Verifying cart page is displayed
+13:03:47.018 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - User clicks delete (X) button of product
+13:03:47.330 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - clicks on login button
+13:03:47.336 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - clicks on login button
+13:03:48.290 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - Verifying product is removed from cart
+13:03:48.426 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Filling account information (title, password, DOB)
+13:03:50.260 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Selecting newsletter and offers checkboxes
+13:03:50.409 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifying error message is displayed or not
+13:03:50.788 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Filling address details
+13:03:52.081 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+13:03:52.697 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Create Account button
+13:03:56.751 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying Account Created message
+13:03:56.816 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Continue button
+13:03:59.780 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+13:03:59.861 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Delete Account button
+13:04:02.772 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying Account Deleted message
+13:04:02.837 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Continue after deletion

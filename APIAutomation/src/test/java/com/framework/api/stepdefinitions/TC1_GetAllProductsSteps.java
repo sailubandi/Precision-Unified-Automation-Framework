@@ -17,6 +17,7 @@ import com.framework.api.validator.ResponseValidator;
 public class TC1_GetAllProductsSteps {
 
     private Response response;
+    
     private ApiClient apiClient;
 
     public TC1_GetAllProductsSteps() {
@@ -28,6 +29,7 @@ public class TC1_GetAllProductsSteps {
     public void i_make_a_get_request_to(String endpoint) {
         CommonSteps.response = apiClient.get(endpoint);
     }
+    
 
 
 

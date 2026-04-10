@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 10 12:45:04 IST 2026</td>
+<td>Started on:</td><td>Fri Apr 10 22:08:08 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12510 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12869 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,74 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete User Account - TC4", "TC4 - Delete User Account"</td>
-<td><div><pre>java.lang.AssertionError: Should indicate successful account deletion expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateAccountDeletionSchema(ResponseValidator.java:113)
-	at com.framework.api.stepdefinitions.TC4_DeleteUserSteps.the_response_json_schema_should_be_valid_for_account_deletion(TC4_DeleteUserSteps.java:45)
-	at ✽.the response JSON schema should be valid for account deletion(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC4_DeleteUser.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1947131919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1947131919'><pre>java.lang.AssertionError: Should indicate successful account deletion expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateAccountDeletionSchema(ResponseValidator.java:113)
-	at com.framework.api.stepdefinitions.TC4_DeleteUserSteps.the_response_json_schema_should_be_valid_for_account_deletion(TC4_DeleteUserSteps.java:45)
-	at ✽.the response JSON schema should be valid for account deletion(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC4_DeleteUser.feature:15)
-</pre></div></td>
-<td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update User Account - TC5", "TC5 - Update User Account"</td>
-<td><div><pre>java.lang.AssertionError: Should indicate successful user update expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateUserUpdateSchema(ResponseValidator.java:132)
-	at com.framework.api.stepdefinitions.TC5_UpdateUserSteps.the_response_json_schema_should_be_valid_for_user_update(TC5_UpdateUserSteps.java:45)
-	at ✽.the response JSON schema should be valid for user update(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC5_UpdateUser.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1144148902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1144148902'><pre>java.lang.AssertionError: Should indicate successful user update expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateUserUpdateSchema(ResponseValidator.java:132)
-	at com.framework.api.stepdefinitions.TC5_UpdateUserSteps.the_response_json_schema_should_be_valid_for_user_update(TC5_UpdateUserSteps.java:45)
-	at ✽.the response JSON schema should be valid for user update(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC5_UpdateUser.feature:15)
-</pre></div></td>
-<td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create New User Account - TC3", "TC3 - Create User Account"</td>
-<td><div><pre>java.lang.AssertionError: Should indicate successful user creation expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateUserCreationSchema(ResponseValidator.java:95)
-	at com.framework.api.stepdefinitions.TC3_CreateUserSteps.the_response_json_schema_should_be_valid_for_user_creation(TC3_CreateUserSteps.java:39)
-	at ✽.the response JSON schema should be valid for user creation(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC3_CreateUser.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace340368210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace340368210'><pre>java.lang.AssertionError: Should indicate successful user creation expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.framework.api.validator.ResponseValidator.validateUserCreationSchema(ResponseValidator.java:95)
-	at com.framework.api.stepdefinitions.TC3_CreateUserSteps.the_response_json_schema_should_be_valid_for_user_creation(TC3_CreateUserSteps.java:39)
-	at ✽.the response JSON schema should be valid for user creation(file:///E:/Veeva%20Prep/VeevaWorkspaceEclipse/SeleniumWebdriver/hybrid-framework/api-tests/src/test/resources/features/TC3_CreateUser.feature:15)
-</pre></div></td>
-<td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -143,45 +75,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create New User Account - TC3", "TC3 - Create User Account"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete User Account - TC4", "TC4 - Delete User Account"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
 <td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get All Products List - TC1", "TC1 - Get All Products List"</td>
 <td></td>
-<td>4</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
-<td></td>
-<td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
-<td></td>
-<td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details by Search - TC2", "TC2 - Get Single Product Details"</td>
-<td></td>
-<td>1</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
-<tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
-<td></td>
-<td>1</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
+<td>5</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
 <tr>
 <td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Validation - Invalid Email - TC6", "TC6 - Negative Validation"</td>
 <td></td>
 <td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
 <tr>
-<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Validation - Invalid Search Parameter - TC6", "TC6 - Negative Validation"</td>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
 <td></td>
 <td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update User Account - TC5", "TC5 - Update User Account"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
 <tr>
 <td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Validation - Missing Required Fields - TC6", "TC6 - Negative Validation"</td>
 <td></td>
 <td>0</td>
-<td>com.framework.api.runner.ApiTestRunner@1f14f20c</td></tr>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details by Search - TC2", "TC2 - Get Single Product Details"</td>
+<td></td>
+<td>1</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get Single Product Details with Different Search Terms - TC2", "TC2 - Get Single Product Details"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
+<tr>
+<td title='com.framework.api.runner.ApiTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.framework.api.runner.ApiTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Validation - Invalid Search Parameter - TC6", "TC6 - Negative Validation"</td>
+<td></td>
+<td>0</td>
+<td>com.framework.api.runner.ApiTestRunner@1df8da7a</td></tr>
 </table><p>
 </body>
 </html>

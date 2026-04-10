@@ -1,0 +1,47 @@
+13:03:40.170 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+13:03:41.729 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - User clicks Cart button
+13:03:42.203 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying both products are visible in the cart
+13:03:42.733 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+13:03:42.862 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - entering incorrect eamil and password
+13:03:43.198 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying prices, quantity and total price of products
+13:03:43.625 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+13:03:43.845 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - entering eamil and password
+13:03:44.036 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying New User Signup text
+13:03:44.150 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Entering name and email
+13:03:44.999 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup button
+13:03:46.582 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - Verifying cart page is displayed
+13:03:47.018 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - User clicks delete (X) button of product
+13:03:47.330 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - clicks on login button
+13:03:47.336 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - clicks on login button
+13:03:48.290 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - Verifying product is removed from cart
+13:03:48.426 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Filling account information (title, password, DOB)
+13:03:50.260 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Selecting newsletter and offers checkboxes
+13:03:50.409 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifying error message is displayed or not
+13:03:50.788 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Filling address details
+13:03:52.081 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+13:03:52.697 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Create Account button
+13:03:56.751 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying Account Created message
+13:03:56.816 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Continue button
+13:03:59.780 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+13:03:59.861 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Delete Account button
+13:04:02.772 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying Account Deleted message
+13:04:02.837 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Continue after deletion
+18:46:52.902 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Launching browser
+18:46:52.902 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Launching browser
+18:46:52.902 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Launching browser
+18:46:52.902 [TestNG-PoolService-5] INFO  stepdefinitions.RegisterSteps - Launching browser
+18:46:52.902 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Launching browser
+18:46:52.912 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+18:46:52.912 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+18:46:52.912 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+18:46:52.912 [TestNG-PoolService-5] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+18:46:52.912 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+18:46:54.065 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+18:46:54.387 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+18:46:54.682 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+18:46:59.200 [TestNG-PoolService-5] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+18:46:59.412 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User clicks on Products button
+18:46:59.489 [TestNG-PoolService-5] INFO  stepdefinitions.RemoveFromCartSteps - User adds products to cart
+18:46:59.621 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+18:46:59.949 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+18:46:59.949 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button

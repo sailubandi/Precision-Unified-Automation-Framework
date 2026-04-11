@@ -1,0 +1,47 @@
+22:46:59.343 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying both products are visible in the cart
+22:46:59.784 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying prices, quantity and total price of products
+22:47:01.266 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying Account Created message
+22:47:01.315 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Continue button
+22:47:04.121 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+22:53:14.771 [main] INFO  stepdefinitions.RegisterSteps - Launching browser
+22:53:14.788 [main] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+22:53:18.513 [main] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+22:53:18.596 [main] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+22:53:21.211 [main] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+22:53:21.279 [main] INFO  stepdefinitions.RegisterSteps - entering eamil and password
+22:53:22.803 [main] INFO  stepdefinitions.RegisterSteps - clicks on login button
+22:53:25.292 [main] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+23:11:13.674 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Launching browser
+23:11:13.674 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Launching browser
+23:11:13.674 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Launching browser
+23:11:13.674 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Launching browser
+23:11:13.692 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+23:11:13.692 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+23:11:13.692 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+23:11:13.692 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Navigating to URL: https://automationexercise.com
+23:11:15.142 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+23:11:17.720 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+23:11:17.828 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+23:11:17.911 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+23:11:17.986 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+23:11:18.125 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying home page is visible
+23:11:18.260 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User clicks on Products button
+23:11:18.261 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Clicking Signup/Login button
+23:11:20.502 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+23:11:20.585 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - entering incorrect eamil and password
+23:11:20.743 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Verifying New User Signup text
+23:11:20.796 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Entering name and email
+23:11:21.114 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - verifing login to your account test is visible
+23:11:21.152 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User hovers over first product and adds it to cart
+23:11:21.208 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - entering eamil and password
+23:11:21.310 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Clicking Signup button
+23:11:22.980 [TestNG-PoolService-4] INFO  stepdefinitions.RegisterSteps - Filling account information (title, password, DOB)
+23:11:23.344 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - clicks on login button
+23:11:24.279 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - clicks on login button
+23:11:25.522 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User clicks Continue Shopping button
+23:11:26.241 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User hovers over second product and adds it to cart
+23:11:26.544 [TestNG-PoolService-3] INFO  stepdefinitions.RegisterSteps - Verifying user is logged in
+23:11:27.694 [TestNG-PoolService-2] INFO  stepdefinitions.RegisterSteps - verifying error message is displayed or not
+23:11:27.837 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - User clicks View Cart button
+23:11:31.232 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying both products are visible in the cart
+23:11:31.786 [TestNG-PoolService-1] INFO  stepdefinitions.RegisterSteps - Verifying prices, quantity and total price of products

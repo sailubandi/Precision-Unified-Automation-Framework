@@ -16,11 +16,70 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
+  <dependency>
+    <groupId>com.Veeva</groupId>
+    <artifactId>Common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+   </dependency>
+   
+   <!-- RestAssured -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.4.0</version>
     </dependency>
-  </dependencies>
+
+    <!-- JSON Schema Validator -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>5.4.0</version>
+    </dependency>
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- Log4j2 for logging -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+</dependency>
+
+<!-- Cucumber -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.12.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.12.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>7.12.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>26.2.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.24.0</version>
+</dependency>
+
+</dependencies>
 </project>

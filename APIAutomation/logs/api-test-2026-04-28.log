@@ -1,0 +1,933 @@
+13:59:16.041 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+13:59:16.047 [main] INFO  utils.LoggerUtil - Total Tests: 1
+13:59:17.222 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+13:59:17.222 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.222 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+13:59:17.231 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T13:59:17.231982100
+13:59:17.231 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.406 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+13:59:17.406 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.406 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+13:59:17.406 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+13:59:17.407 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+13:59:17.407 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T13:59:17.407069900
+13:59:17.407 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 131ms
+13:59:17.408 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.421 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+13:59:17.439 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+13:59:17.440 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.440 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+13:59:17.440 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T13:59:17.440847900
+13:59:17.440 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+13:59:17.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.469 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+13:59:17.469 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+13:59:17.470 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+13:59:17.470 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T13:59:17.470243700
+13:59:17.470 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 22ms
+13:59:17.470 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.471 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+13:59:17.480 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+13:59:17.481 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.481 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+13:59:17.481 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T13:59:17.481723100
+13:59:17.481 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.491 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+13:59:17.493 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.494 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+13:59:17.494 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+13:59:17.494 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+13:59:17.494 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T13:59:17.494540100
+13:59:17.494 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 12ms
+13:59:17.494 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.495 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+13:59:17.503 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+13:59:17.503 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.503 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+13:59:17.503 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T13:59:17.503091800
+13:59:17.503 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.515 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+13:59:17.515 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.515 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+13:59:17.515 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+13:59:17.516 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+13:59:17.516 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T13:59:17.516675300
+13:59:17.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 13ms
+13:59:17.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+13:59:17.526 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+13:59:17.526 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.526 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+13:59:17.526 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T13:59:17.526389700
+13:59:17.527 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.542 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+13:59:17.542 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+13:59:17.542 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+13:59:17.542 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+13:59:17.543 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC3_CreateUserSteps.response_message_should_be(java.lang.String) and com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_message_should_be(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+13:59:17.544 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T13:59:17.544341400
+13:59:17.544 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 16ms
+13:59:17.544 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+13:59:17.544 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+13:59:17.688 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+13:59:17.688 [main] INFO  utils.LoggerUtil - Passed: 0
+13:59:17.688 [main] INFO  utils.LoggerUtil - Failed: 5
+13:59:17.688 [main] INFO  utils.LoggerUtil - Skipped: 0
+13:59:17.688 [main] INFO  utils.LoggerUtil - Success Rate: 0.00%
+14:02:31.879 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+14:02:31.884 [main] INFO  utils.LoggerUtil - Total Tests: 1
+14:02:32.712 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:02:32.713 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.713 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:02:32.721 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:02:32.721584200
+14:02:32.723 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.867 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:02:32.868 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.868 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:02:32.868 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+14:02:32.868 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:02:32.869 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:02:32.869190800
+14:02:32.869 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 115ms
+14:02:32.869 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.881 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:02:32.899 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:02:32.899 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.900 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:02:32.900 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:02:32.900643900
+14:02:32.900 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.919 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:02:32.919 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.919 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:02:32.920 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+14:02:32.920 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:02:32.921 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:02:32.920605600
+14:02:32.921 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 20ms
+14:02:32.921 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.921 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:02:32.935 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:02:32.936 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.936 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:02:32.936 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:02:32.936385700
+14:02:32.936 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.951 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:02:32.953 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.953 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:02:32.953 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+14:02:32.954 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:02:32.954 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:02:32.954000700
+14:02:32.955 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 20ms
+14:02:32.955 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.955 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:02:32.966 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:02:32.967 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.967 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:02:32.968 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:02:32.967568500
+14:02:32.968 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.981 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:02:32.982 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.982 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:02:32.982 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+14:02:32.982 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:02:32.983 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:02:32.983334300
+14:02:32.983 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 14ms
+14:02:32.983 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:32.983 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:02:32.991 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:02:32.991 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:32.991 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:02:32.991 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:02:32.991015700
+14:02:32.991 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:33.001 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:02:33.002 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:02:33.002 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:02:33.002 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+14:02:33.002 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.response_status_code_should_be_200() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.response_status_code_should_be_200()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:02:33.002 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:02:33.002141700
+14:02:33.002 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 12ms
+14:02:33.003 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:02:33.003 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:02:33.153 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+14:02:33.153 [main] INFO  utils.LoggerUtil - Passed: 0
+14:02:33.153 [main] INFO  utils.LoggerUtil - Failed: 5
+14:02:33.153 [main] INFO  utils.LoggerUtil - Skipped: 0
+14:02:33.155 [main] INFO  utils.LoggerUtil - Success Rate: 0.00%
+14:10:18.425 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+14:10:18.431 [main] INFO  utils.LoggerUtil - Total Tests: 1
+14:10:19.458 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:10:19.458 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.459 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:10:19.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:10:19.468192400
+14:10:19.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.636 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:10:19.636 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.636 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:10:19.636 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+14:10:19.637 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:10:19.637 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:10:19.637730600
+14:10:19.637 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 132ms
+14:10:19.639 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.653 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:10:19.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:10:19.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:10:19.675 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:10:19.674882
+14:10:19.675 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.694 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:10:19.694 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.695 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:10:19.695 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+14:10:19.695 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:10:19.697 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:10:19.697267700
+14:10:19.697 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 23ms
+14:10:19.697 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.697 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:10:19.706 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:10:19.706 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.707 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:10:19.707 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:10:19.707795700
+14:10:19.707 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.722 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:10:19.722 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.722 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:10:19.722 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+14:10:19.723 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:10:19.723 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:10:19.723495300
+14:10:19.723 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 14ms
+14:10:19.723 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.723 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:10:19.730 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:10:19.730 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.730 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:10:19.730 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:10:19.730214700
+14:10:19.731 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.741 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:10:19.742 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.742 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:10:19.742 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+14:10:19.742 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:10:19.742 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:10:19.742990
+14:10:19.742 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 11ms
+14:10:19.742 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.742 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:10:19.748 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:10:19.749 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.749 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:10:19.749 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:10:19.749877600
+14:10:19.749 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.761 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST FAILED: runScenario ==========
+14:10:19.761 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:10:19.761 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: FAILED
+14:10:19.762 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Failure Reason: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+14:10:19.762 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Stack Trace: io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.framework.api.stepdefinitions.TC4_DeleteUserSteps.i_have_a_newly_created_user() and com.framework.api.stepdefinitions.TC5_UpdateUserSteps.i_have_a_newly_created_user()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+14:10:19.762 [TestNG-test=API Tests-1] ERROR utils.LoggerUtil - Test Failed At: 2026-04-28T14:10:19.762080700
+14:10:19.762 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 13ms
+14:10:19.762 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:10:19.763 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:10:19.916 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+14:10:19.916 [main] INFO  utils.LoggerUtil - Passed: 0
+14:10:19.917 [main] INFO  utils.LoggerUtil - Failed: 5
+14:10:19.917 [main] INFO  utils.LoggerUtil - Skipped: 0
+14:10:19.918 [main] INFO  utils.LoggerUtil - Success Rate: 0.00%
+14:14:00.584 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+14:14:00.589 [main] INFO  utils.LoggerUtil - Total Tests: 1
+14:14:01.422 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:14:01.423 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:01.423 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:14:01.431 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:14:01.431444100
+14:14:01.432 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:02.497 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+14:14:02.498 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+14:14:08.127 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 5628ms
+14:14:08.158 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 5660ms
+14:14:08.158 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:14:09.426052400
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 7917ms
+14:14:09.426 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:09.427 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:14:09.431 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:14:09.431 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:09.432 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:14:09.432 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:14:09.432855100
+14:14:09.432 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:13.048 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:14:13.048 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:13.048 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:14:13.048 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:14:13.048631800
+14:14:13.049 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 3618ms
+14:14:13.049 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:13.049 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:14:13.053 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:14:13.053 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:13.053 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:14:13.053 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:14:13.053670
+14:14:13.053 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:17.660 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:14:17.662187900
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 4608ms
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:17.662 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:14:17.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:14:17.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:17.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:14:17.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:14:17.666705
+14:14:17.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:22.812 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:14:22.812 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:22.812 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:14:22.812 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:14:22.812518200
+14:14:22.813 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 5147ms
+14:14:22.813 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:22.813 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:14:22.817 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:14:22.817 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:22.817 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:14:22.817 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:14:22.817249300
+14:14:22.817 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:24.735 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:14:24.735 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:14:24.735 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:14:24.735 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:14:24.735735600
+14:14:24.735 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1919ms
+14:14:24.736 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:14:24.736 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:14:24.857 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+14:14:24.858 [main] INFO  utils.LoggerUtil - Passed: 5
+14:14:24.858 [main] INFO  utils.LoggerUtil - Failed: 0
+14:14:24.858 [main] INFO  utils.LoggerUtil - Skipped: 0
+14:14:24.859 [main] INFO  utils.LoggerUtil - Success Rate: 500.00%
+14:25:05.314 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+14:25:05.318 [main] INFO  utils.LoggerUtil - Total Tests: 1
+14:25:06.107 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:25:06.107 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:06.108 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:25:06.116 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:25:06.116364200
+14:25:06.116 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:07.133 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+14:25:07.133 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+14:25:07.134 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Method: GET
+14:25:07.134 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/productsList
+14:25:07.134 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+14:25:07.134 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+14:25:09.190 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+14:25:09.190 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+14:25:09.190 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Time: 2055ms
+14:25:09.225 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+14:25:09.228 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+14:25:09.236 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 2102ms
+14:25:09.236 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+14:25:10.385 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:25:10.385 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:25:10.460 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:25:10.460 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:10.460 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:25:10.461 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:25:10.461067900
+14:25:10.461 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 4308ms
+14:25:10.461 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:10.461 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:25:10.465 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:25:10.465 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:10.467 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:25:10.467 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:25:10.467167
+14:25:10.467 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:12.059 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:25:12.059 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:25:12.064 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:25:12.064 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:12.064 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:25:12.064 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:25:12.064344500
+14:25:12.064 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1598ms
+14:25:12.065 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:12.065 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:25:12.067 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:25:12.067 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:12.068 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:25:12.068 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:25:12.068875
+14:25:12.068 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:12.952 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:25:12.953 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:25:12.956392400
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 888ms
+14:25:12.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:12.957 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:25:12.960 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:25:12.960 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:12.961 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:25:12.961 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:25:12.961130500
+14:25:12.961 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:13.636 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:25:13.636 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:25:13.640 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:25:13.640 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:13.640 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:25:13.640 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:25:13.640540100
+14:25:13.641 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 680ms
+14:25:13.641 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:13.641 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:25:13.644 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:25:13.644 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:13.644 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:25:13.644 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:25:13.644392700
+14:25:13.644 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:14.273 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:25:14.273 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:25:14.275 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:25:14.276061800
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 631ms
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:25:14.276 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:25:14.380 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+14:25:14.380 [main] INFO  utils.LoggerUtil - Passed: 5
+14:25:14.380 [main] INFO  utils.LoggerUtil - Failed: 0
+14:25:14.380 [main] INFO  utils.LoggerUtil - Skipped: 0
+14:25:14.381 [main] INFO  utils.LoggerUtil - Success Rate: 500.00%
+14:34:09.042 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+14:34:09.046 [main] INFO  utils.LoggerUtil - Total Tests: 1
+14:34:09.929 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:34:09.929 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:09.929 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:34:09.938 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:34:09.938114200
+14:34:09.939 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:10.732 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+14:34:10.733 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+14:34:10.733 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Method: GET
+14:34:10.734 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/productsList
+14:34:10.734 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+14:34:10.734 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+14:34:13.529 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+14:34:13.529 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+14:34:13.529 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Time: 2795ms
+14:34:13.562 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+14:34:13.563 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+14:34:13.570 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 2837ms
+14:34:13.570 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+14:34:17.514 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:34:17.514 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:34:17.601 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:34:17.602 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:17.603 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:34:17.603 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:34:17.603441900
+14:34:17.603 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 7622ms
+14:34:17.603 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:17.603 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:34:17.608 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:34:17.608 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:17.609 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:34:17.609 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:34:17.609838600
+14:34:17.610 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:18.571 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:34:18.571 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:34:18.575 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:34:18.576653200
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 969ms
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:18.576 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:34:18.581 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:34:18.584 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:18.585 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:34:18.585 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:34:18.585411
+14:34:18.586 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:19.359 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:34:19.360 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:34:19.364948600
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 784ms
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:19.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:34:19.370 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:34:19.371 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:19.371 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:34:19.371 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:34:19.371761400
+14:34:19.371 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:20.772 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:34:20.772 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:34:20.775 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:34:20.776 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:20.776 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:34:20.776 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:34:20.776683400
+14:34:20.776 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1407ms
+14:34:20.776 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:20.777 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:34:20.781 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+14:34:20.781 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:20.781 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+14:34:20.782 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T14:34:20.782757400
+14:34:20.782 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:21.663 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+14:34:21.664 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+14:34:21.665 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: runScenario ==========
+14:34:21.666 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+14:34:21.667 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+14:34:21.667 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T14:34:21.667020800
+14:34:21.667 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 886ms
+14:34:21.667 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+14:34:21.667 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+14:34:21.772 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+14:34:21.772 [main] INFO  utils.LoggerUtil - Passed: 5
+14:34:21.772 [main] INFO  utils.LoggerUtil - Failed: 0
+14:34:21.772 [main] INFO  utils.LoggerUtil - Skipped: 0
+14:34:21.773 [main] INFO  utils.LoggerUtil - Success Rate: 100.00%
+15:46:52.639 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+15:46:52.651 [main] INFO  utils.LoggerUtil - Total Tests: 1
+15:46:55.736 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get All Products List - TC1" ==========
+15:46:55.738 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:46:55.739 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+15:46:55.759 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T15:46:55.759303300
+15:46:55.760 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:46:57.942 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+15:46:57.944 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+15:46:57.944 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Method: GET
+15:46:57.944 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/productsList
+15:46:57.945 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+15:46:57.945 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+15:47:03.714 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+15:47:03.715 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+15:47:03.715 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Time: 5769ms
+15:47:03.799 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+15:47:03.804 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+15:47:03.823 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 5879ms
+15:47:03.823 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+15:47:06.960 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+15:47:06.961 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+15:47:07.222 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get All Products List - TC1" ==========
+15:47:07.223 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:07.223 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+15:47:07.223 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T15:47:07.223094900
+15:47:07.224 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 11350ms
+15:47:07.224 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:07.226 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get All Products List - TC1" ==========
+15:47:07.239 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details by Search - TC2" ==========
+15:47:07.240 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:07.241 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+15:47:07.241 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T15:47:07.241952400
+15:47:07.241 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:08.703 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+15:47:08.704 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+15:47:08.715 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details by Search - TC2" ==========
+15:47:08.716 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:08.716 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+15:47:08.717 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T15:47:08.717435200
+15:47:08.717 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1478ms
+15:47:08.718 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:08.718 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details by Search - TC2" ==========
+15:47:08.724 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:08.725 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:08.726 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+15:47:08.727 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T15:47:08.726707300
+15:47:08.727 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:09.823 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+15:47:09.824 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+15:47:09.831 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:09.832 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:09.834 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+15:47:09.838 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T15:47:09.838082600
+15:47:09.840 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1106ms
+15:47:09.840 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:09.841 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:09.847 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:09.848 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:09.848 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+15:47:09.848 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T15:47:09.848332200
+15:47:09.850 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:11.274 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+15:47:11.274 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+15:47:11.279 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:11.279 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:11.279 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+15:47:11.280 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T15:47:11.280902600
+15:47:11.281 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1433ms
+15:47:11.281 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:11.282 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:11.288 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:11.289 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:11.289 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+15:47:11.289 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-28T15:47:11.289959300
+15:47:11.289 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:12.344 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+15:47:12.345 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+15:47:12.350 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:12.351 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+15:47:12.352 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+15:47:12.352 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-28T15:47:12.352150
+15:47:12.353 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1063ms
+15:47:12.353 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - =================================================
+15:47:12.353 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+15:47:12.639 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+15:47:12.639 [main] INFO  utils.LoggerUtil - Passed: 5
+15:47:12.639 [main] INFO  utils.LoggerUtil - Failed: 0
+15:47:12.641 [main] INFO  utils.LoggerUtil - Skipped: 0
+15:47:12.643 [main] INFO  utils.LoggerUtil - Success Rate: 100.00%

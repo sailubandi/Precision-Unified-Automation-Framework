@@ -1,0 +1,139 @@
+17:56:03.106 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+17:56:03.109 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+17:56:06.177 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 3068ms
+17:56:06.209 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 1777033566209ms
+17:56:06.210 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+18:02:43.965 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+18:02:43.968 [main] INFO  utils.LoggerUtil - Total Tests: 1
+18:02:44.914 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:44.915 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:44.915061700
+18:02:45.682 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+18:02:45.683 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+18:02:48.321 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 2638ms
+18:02:48.354 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 2671ms
+18:02:48.354 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+18:02:49.675 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:49.676 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:49.676126700
+18:02:49.676 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:49.682 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:49.683 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:49.683162800
+18:02:51.029 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:51.029 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:51.029281700
+18:02:51.029 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:51.034 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:51.035 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:51.035307400
+18:02:51.841 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:51.841 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:51.841879900
+18:02:51.841 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:51.845 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:51.845 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:51.845667100
+18:02:52.373 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:52.373 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:52.373975300
+18:02:52.373 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:52.377 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:52.377 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:52.377969100
+18:02:53.385 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:53.385 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:53.385883700
+18:02:53.385 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:53.389 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:53.389 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:53.389916400
+18:02:53.964 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:53.964 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:53.964313100
+18:02:53.964 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:53.966 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:53.966 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:53.966613300
+18:02:54.491 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:54.491 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:54.491590600
+18:02:54.491 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:54.494 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:54.495 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:54.495120500
+18:02:55.022 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:55.022 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:55.022268100
+18:02:55.022 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:55.025 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:55.026 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:55.026275800
+18:02:55.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:55.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:55.468847600
+18:02:55.468 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:55.471 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:55.471 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:55.471758100
+18:02:55.998 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:55.998 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:55.998533300
+18:02:55.998 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:56.001 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:02:56.001 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:02:56.001164300
+18:02:56.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:02:56.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:02:56.517664300
+18:02:56.517 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:02:56.624 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+18:02:56.624 [main] INFO  utils.LoggerUtil - Passed: 11
+18:02:56.624 [main] INFO  utils.LoggerUtil - Failed: 0
+18:02:56.624 [main] INFO  utils.LoggerUtil - Skipped: 0
+18:02:56.625 [main] INFO  utils.LoggerUtil - Success Rate: 1100.00%
+18:33:32.789 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+18:33:32.793 [main] INFO  utils.LoggerUtil - Total Tests: 1
+18:33:33.925 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:33.927 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:33.927180500
+18:33:34.807 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+18:33:34.807 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+18:33:37.956 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 3149ms
+18:33:37.992 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 3185ms
+18:33:37.993 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: /api/productsList
+18:33:39.559 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:39.559 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:39.559296
+18:33:39.559 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:39.567 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:39.567 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:39.567200900
+18:33:40.801 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:40.802 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:40.802528
+18:33:40.803 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:40.805 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:40.805 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:40.805645300
+18:33:41.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:41.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:41.674823600
+18:33:41.674 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:41.678 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:41.679 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:41.678849400
+18:33:42.293 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:42.293 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:42.293433700
+18:33:42.293 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:42.296 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:42.296 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:42.296963300
+18:33:42.849 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:42.849 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:42.849576100
+18:33:42.849 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:42.853 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:42.853 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:42.853104400
+18:33:43.774 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:43.774 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:43.774860700
+18:33:43.774 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:43.777 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:43.778 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:43.778381200
+18:33:44.364 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:44.365 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:44.365206700
+18:33:44.366 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:44.370 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:44.371 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:44.371623700
+18:33:44.967 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:44.967 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:44.967979500
+18:33:44.967 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:44.972 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:44.972 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:44.972533100
+18:33:45.544 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:45.546 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:45.546111800
+18:33:45.546 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:45.549 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:45.549 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:45.549875200
+18:33:46.073 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:46.073 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:46.073847600
+18:33:46.073 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:46.075 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: runScenario ==========
+18:33:46.075 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Started: runScenario - 2026-04-24T18:33:46.075847600
+18:33:46.490 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - TEST PASSED: runScenario
+18:33:46.492 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - Test Completed Successfully: runScenario - 2026-04-24T18:33:46.491893400
+18:33:46.492 [TestNG-test=API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: runScenario ==========
+18:33:46.640 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+18:33:46.642 [main] INFO  utils.LoggerUtil - Passed: 11
+18:33:46.642 [main] INFO  utils.LoggerUtil - Failed: 0
+18:33:46.642 [main] INFO  utils.LoggerUtil - Skipped: 0
+18:33:46.643 [main] INFO  utils.LoggerUtil - Success Rate: 1100.00%

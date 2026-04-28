@@ -7,6 +7,8 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import client.ApiClient;
 import com.framework.api.validator.ResponseValidator;
+import config.ConfigReader;
+import utils.LoggerUtil;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
@@ -21,6 +23,31 @@ public class CommonSteps {
 
     public CommonSteps() {
         this.apiClient = new ApiClient();
+    }
+    
+    /**
+     * Resolves configuration placeholders in the endpoint
+     * @param endpoint The endpoint that may contain placeholders like ${config.key}
+     * @return Resolved endpoint from configuration or original endpoint if no placeholder
+     */
+    private String resolveEndpoint(String endpoint) {
+        if (endpoint == null) {
+            return null;
+        }
+        
+        if (endpoint.startsWith("${") && endpoint.endsWith("}")) {
+            String configKey = endpoint.substring(2, endpoint.length() - 1);
+            String configValue = ConfigReader.get(configKey);
+            if (configValue != null) {
+                LoggerUtil.logInfo("Resolved endpoint placeholder: " + endpoint + " -> " + configValue);
+                return configValue;
+            } else {
+                LoggerUtil.logError("Configuration key not found: " + configKey);
+                return endpoint; // Return original if config not found
+            }
+        }
+        
+        return endpoint;
     }
 
     @Given("the API endpoint is available for products")
@@ -81,6 +108,22 @@ public class CommonSteps {
 
     @When("I make a POST request to {string} with search parameter {string}")
     public void i_make_a_post_request_to_with_search_parameter(String endpoint, String searchTerm) {
-        CommonSteps.response = apiClient.postWithSearch(endpoint, searchTerm);
+        String resolvedEndpoint = resolveEndpoint(endpoint);
+        CommonSteps.response = apiClient.postWithSearch(resolvedEndpoint, searchTerm);
+        
+        // Handle potential rate limiting for certain search terms
+        int statusCode = CommonSteps.response.getStatusCode();
+        if (statusCode == 503) {
+            LoggerUtil.logInfo("Search API returned 503, possible rate limiting for term: " + searchTerm);
+            LoggerUtil.logInfo("Retrying search request once...");
+            try {
+                Thread.sleep(1000); // Wait 1 second
+                CommonSteps.response = apiClient.postWithSearch(resolvedEndpoint, searchTerm);
+                LoggerUtil.logInfo("Retry completed, new status code: " + CommonSteps.response.getStatusCode());
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                LoggerUtil.logError("Retry interrupted: " + e.getMessage());
+            }
+        }
     }
 }

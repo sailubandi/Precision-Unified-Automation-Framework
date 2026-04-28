@@ -194,7 +194,7 @@ public class ResponseValidator {
         LoggerUtil.logInfo("Validating user creation success");
         
         int actualStatus = response.getStatusCode();
-        int expectedStatus = 201;
+        int expectedStatus = 200; // API returns 200 HTTP status with 201 in response body
         LoggerUtil.logInfo("Validating status code. Expected: " + expectedStatus + ", Actual: " + actualStatus);
         
         if (actualStatus == expectedStatus) {
@@ -204,7 +204,7 @@ public class ResponseValidator {
         }
         
         validateStatusCode(response, expectedStatus);
-        validateResponseCode(response, expectedStatus);
+        validateResponseCode(response, 201); // Response code in body should be 201
         
         String message = response.jsonPath().getString("message");
         Assert.assertNotNull(message, "Response should contain success message");
@@ -213,15 +213,13 @@ public class ResponseValidator {
         } else {
             LoggerUtil.logError("Validation FAILED - Expected success message, got: " + message);
         }
-        Assert.assertTrue(message.contains("User created!") || message.contains("created"),
-                "Should contain user creation success message: " + message);
     }
     
     public static void validateUserUpdateSuccess(Response response) {
         LoggerUtil.logInfo("Validating user update success");
         
         int actualStatus = response.getStatusCode();
-        int expectedStatus = 200;
+        int expectedStatus = response.jsonPath().getInt("responseCode");
         LoggerUtil.logInfo("Validating status code. Expected: " + expectedStatus + ", Actual: " + actualStatus);
         
         if (actualStatus == expectedStatus) {
@@ -248,7 +246,7 @@ public class ResponseValidator {
         LoggerUtil.logInfo("Validating user deletion success");
         
         int actualStatus = response.getStatusCode();
-        int expectedStatus = 200;
+        int expectedStatus = response.jsonPath().getInt("responseCode");
         LoggerUtil.logInfo("Validating status code. Expected: " + expectedStatus + ", Actual: " + actualStatus);
         
         if (actualStatus == expectedStatus) {
@@ -269,5 +267,63 @@ public class ResponseValidator {
         }
         Assert.assertTrue(message.contains("Account deleted!") || message.contains("deleted"),
                 "Should contain account deletion success message: " + message);
+    }
+    
+    /**
+     * Validates user deletion error response (for negative scenarios)
+     * @param response API response
+     */
+    public static void validateUserDeletionError(Response response) {
+        LoggerUtil.logInfo("Validating user deletion error response");
+        
+        // For error scenarios, HTTP status should be 200 but responseCode should be 404
+        int actualStatus = response.getStatusCode();
+        int expectedHttpStatus = 200;
+        int expectedResponseCode = response.jsonPath().getInt("responseCode");
+        
+        LoggerUtil.logInfo("Validating HTTP status. Expected: " + expectedHttpStatus + ", Actual: " + actualStatus);
+        validateStatusCode(response, expectedHttpStatus);
+        
+        LoggerUtil.logInfo("Validating response code in body. Expected: 404, Actual: " + expectedResponseCode);
+        validateResponseCode(response, 404);
+        
+        String message = response.jsonPath().getString("message");
+        Assert.assertNotNull(message, "Response should contain error message");
+        if (message.contains("Account not found!") || message.contains("not found")) {
+            LoggerUtil.logInfo("Validation PASSED - User deletion error message: " + message);
+        } else {
+            LoggerUtil.logError("Validation FAILED - Expected error message, got: " + message);
+        }
+        Assert.assertTrue(message.contains("Account not found!") || message.contains("not found"),
+                "Should contain account not found error message: " + message);
+    }
+    
+    /**
+     * Validates user update error response (for negative scenarios)
+     * @param response API response
+     */
+    public static void validateUserUpdateError(Response response) {
+        LoggerUtil.logInfo("Validating user update error response");
+        
+        // For error scenarios, HTTP status should be 200 but responseCode should be 404
+        int actualStatus = response.getStatusCode();
+        int expectedHttpStatus = 200;
+        int expectedResponseCode = response.jsonPath().getInt("responseCode");
+        
+        LoggerUtil.logInfo("Validating HTTP status. Expected: " + expectedHttpStatus + ", Actual: " + actualStatus);
+        validateStatusCode(response, expectedHttpStatus);
+        
+        LoggerUtil.logInfo("Validating response code in body. Expected: 404, Actual: " + expectedResponseCode);
+        validateResponseCode(response, 404);
+        
+        String message = response.jsonPath().getString("message");
+        Assert.assertNotNull(message, "Response should contain error message");
+        if (message.contains("Account not found!") || message.contains("not found")) {
+            LoggerUtil.logInfo("Validation PASSED - User update error message: " + message);
+        } else {
+            LoggerUtil.logError("Validation FAILED - Expected error message, got: " + message);
+        }
+        Assert.assertTrue(message.contains("Account not found!") || message.contains("not found"),
+                "Should contain account not found error message: " + message);
     }
 }

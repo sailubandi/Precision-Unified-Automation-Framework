@@ -44,7 +44,8 @@ public class UserDataFactory {
      */
     private static String generateUniqueEmail() {
         String timestamp = String.valueOf(System.currentTimeMillis());
-        return "testuser_" + timestamp + "@test.com";
+        String domain = ConfigReader.get("test.user.email.domain");
+        return "testuser_" + timestamp + "@" + domain;
     }
     
     /**
@@ -82,16 +83,16 @@ public class UserDataFactory {
         user.setName(TestDataUtils.getRandomUsername());
         user.setEmail(TestDataUtils.getRandomEmail());
         user.setPassword(TestDataUtils.getRandomPassword());
-        user.setTitle("Mr");
-        user.setBirth_date("15");
-        user.setBirth_month("January");
-        user.setBirth_year("1990");
+        user.setTitle(ConfigReader.get("test.user.default.title"));
+        user.setBirth_date(ConfigReader.get("test.user.default.birth_date"));
+        user.setBirth_month(ConfigReader.get("test.user.default.birth_month"));
+        user.setBirth_year(ConfigReader.get("test.user.default.birth_year"));
         user.setFirstname(TestDataUtils.getRandomString(6));
         user.setLastname(TestDataUtils.getRandomString(8));
         user.setCompany(TestDataUtils.getRandomCompany());
         user.setAddress1(TestDataUtils.getRandomAddress());
-        user.setAddress2("Apt " + TestDataUtils.getRandomNumber(2));
-        user.setCountry("USA");
+        user.setAddress2(ConfigReader.get("test.user.default.address.prefix") + " " + TestDataUtils.getRandomNumber(2));
+        user.setCountry(ConfigReader.get("test.user.default.country"));
         user.setZipcode(TestDataUtils.getRandomZipcode());
         user.setState(TestDataUtils.getRandomState());
         user.setCity(TestDataUtils.getRandomCity());
@@ -189,5 +190,31 @@ public class UserDataFactory {
         String[] searchTerms = getSearchTerms();
         int randomIndex = (int) (Math.random() * searchTerms.length);
         return searchTerms[randomIndex];
+    }
+    
+    /**
+     * Creates a user with existing email for negative testing
+     * @return User object with existing email
+     */
+    public static User createUserWithExistingEmail() {
+        User user = new User();
+        user.setName(ConfigReader.get("test.user.name"));
+        user.setEmail(ConfigReader.get("test.user.existing.email")); // Fixed existing email
+        user.setPassword(ConfigReader.get("test.user.password"));
+        user.setTitle(ConfigReader.get("test.user.title"));
+        user.setBirth_date(ConfigReader.get("test.user.birth_date"));
+        user.setBirth_month(ConfigReader.get("test.user.birth_month"));
+        user.setBirth_year(ConfigReader.get("test.user.birth_year"));
+        user.setFirstname(ConfigReader.get("test.user.firstname"));
+        user.setLastname(ConfigReader.get("test.user.lastname"));
+        user.setCompany(ConfigReader.get("test.user.company"));
+        user.setAddress1(ConfigReader.get("test.user.address1"));
+        user.setAddress2(ConfigReader.get("test.user.address2"));
+        user.setCountry(ConfigReader.get("test.user.country"));
+        user.setZipcode(ConfigReader.get("test.user.zipcode"));
+        user.setState(ConfigReader.get("test.user.state"));
+        user.setCity(ConfigReader.get("test.user.city"));
+        user.setMobile_number(ConfigReader.get("test.user.mobile_number"));
+        return user;
     }
 }

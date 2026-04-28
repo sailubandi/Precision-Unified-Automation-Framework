@@ -12,7 +12,8 @@ import io.cucumber.testng.CucumberOptions;
     plugin = {
         "pretty",
         "html:target/cucumber-reports/cucumber.html",
-        "json:target/cucumber-reports/cucumber.json"
+        "json:target/cucumber-reports/cucumber.json",
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
     },
     monochrome = true,
     tags = "@TC1 or @TC2 or @TC3 or @TC4 or @TC5 or @TC6"

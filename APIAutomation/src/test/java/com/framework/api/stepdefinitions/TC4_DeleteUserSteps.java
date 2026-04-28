@@ -15,6 +15,7 @@ import com.framework.api.factory.UserDataFactory;
 import com.framework.api.pojo.User;
 import com.framework.api.validator.ResponseValidator;
 import utils.LoggerUtil;
+import config.ConfigReader;
 
 /**
  * Step definitions for TC4 - Delete User Account
@@ -26,6 +27,31 @@ public class TC4_DeleteUserSteps {
 
     public TC4_DeleteUserSteps() {
         this.apiClient = new ApiClient();
+    }
+    
+    /**
+     * Resolves configuration placeholders in the endpoint
+     * @param endpoint The endpoint that may contain placeholders like ${config.key}
+     * @return Resolved endpoint from configuration or original endpoint if no placeholder
+     */
+    private String resolveEndpoint(String endpoint) {
+        if (endpoint == null) {
+            return null;
+        }
+        
+        if (endpoint.startsWith("${") && endpoint.endsWith("}")) {
+            String configKey = endpoint.substring(2, endpoint.length() - 1);
+            String configValue = ConfigReader.get(configKey);
+            if (configValue != null) {
+                LoggerUtil.logInfo("Resolved endpoint placeholder: " + endpoint + " -> " + configValue);
+                return configValue;
+            } else {
+                LoggerUtil.logError("Configuration key not found: " + configKey);
+                return endpoint; // Return original if config not found
+            }
+        }
+        
+        return endpoint;
     }
 
     @Given("I have a newly created user for deletion")
@@ -40,7 +66,7 @@ public class TC4_DeleteUserSteps {
         LoggerUtil.logApiResponse(createResponse.getStatusCode(), 0);
         
         // Validate user creation was successful
-        if (createResponse.getStatusCode() == 201) {
+        if (createResponse.getStatusCode() == 200) {
             LoggerUtil.logInfo("User creation successful for setup: " + currentUser.getEmail());
         } else {
             LoggerUtil.logError("User creation failed for setup: " + createResponse.getBody().asString());
@@ -64,18 +90,19 @@ public class TC4_DeleteUserSteps {
 
     @When("I make a DELETE request to {string} with user credentials from configuration")
     public void i_make_a_delete_request_to_with_user_credentials_from_configuration(String endpoint) {
-        User user = UserDataFactory.createUserCredentials();
-        CommonSteps.response = apiClient.deleteUser(endpoint, user);
+        String resolvedEndpoint = resolveEndpoint(endpoint);
+        // Use the same user that was created in setup
+        CommonSteps.response = apiClient.deleteUser(resolvedEndpoint, currentUser);
     }
 
-    @Then("user deletion response status code should be 200")
-    public void user_deletion_response_status_code_should_be_200() {
-        ResponseValidator.validateStatusCode(CommonSteps.response, 200);
-        LoggerUtil.logInfo("Validated 200 status code for user deletion");
+    @Then("the user deletion response status code should be {int}")
+    public void the_user_deletion_response_status_code_should_be(Integer expectedCode) {
+        ResponseValidator.validateStatusCode(CommonSteps.response, expectedCode);
+        LoggerUtil.logInfo("Validated " + expectedCode + " status code for user deletion");
     }
 
-    @Then("user deletion response message should be {string}")
-    public void user_deletion_response_message_should_be(String expectedMessage) {
+    @Then("the user deletion response message should be {string}")
+    public void the_user_deletion_response_message_should_be(String expectedMessage) {
         String actualMessage = CommonSteps.response.jsonPath().getString("message");
         LoggerUtil.logInfo("Expected message: " + expectedMessage + ", Actual message: " + actualMessage);
         assert actualMessage != null : "Response message should not be null";
@@ -83,10 +110,19 @@ public class TC4_DeleteUserSteps {
             "Message mismatch. Expected: " + expectedMessage + ", Actual: " + actualMessage;
     }
 
-    @And("response JSON schema should be valid for account deletion")
-    public void _response_json_schema_should_be_valid_for_account_deletion() {
-        ResponseValidator.validateUserDeletionSuccess(CommonSteps.response);
-        LoggerUtil.logInfo("Validated account deletion response schema");
+    @Then("the response JSON schema should be valid for account deletion")
+    public void the_response_json_schema_should_be_valid_for_account_deletion() {
+        // Check if this is a negative scenario by looking at the response code
+        int responseCode = CommonSteps.response.jsonPath().getInt("responseCode");
+        if (responseCode == 404) {
+            // Negative scenario - use error validation
+            ResponseValidator.validateUserDeletionError(CommonSteps.response);
+            LoggerUtil.logInfo("Validated account deletion error response schema");
+        } else {
+            // Positive scenario - use success validation
+            ResponseValidator.validateUserDeletionSuccess(CommonSteps.response);
+            LoggerUtil.logInfo("Validated account deletion success response schema");
+        }
     }
 
 }

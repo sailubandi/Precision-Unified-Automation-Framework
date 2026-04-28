@@ -1,0 +1,1 @@
+POST /api/createAccount with user: User{name='null', email='null', password='null', title='null', birth_date='null', birth_month='null', birth_year='null', firstname='null', lastname='null', company='null', address1='null', address2='null', country='null', zipcode='null', state='null', city='null', mobile_number='null'}

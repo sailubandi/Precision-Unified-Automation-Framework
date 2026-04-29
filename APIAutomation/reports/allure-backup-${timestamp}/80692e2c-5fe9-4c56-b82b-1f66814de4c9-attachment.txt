@@ -1,0 +1,1 @@
+POST /api/createAccount with user: User{name='John Doe', email='testuser_1777385360710@test.com', password='Test123', title='Mr', birth_date='15', birth_month='January', birth_year='1990', firstname='John', lastname='Doe', company='Tech Inc', address1='123 Main St', address2='Apt 4B', country='USA', zipcode='10001', state='NY', city='New York', mobile_number='1234567890'}

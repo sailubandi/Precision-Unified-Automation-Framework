@@ -255,6 +255,9 @@ public class TC5_UpdateUserSteps {
 
     @And("response JSON schema should be valid for user update")
     public void response_json_schema_should_be_valid_for_user_update() {
+        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+        LoggerUtil.logInfo("Validating user update schema: " + schemaPath);
+        ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         ResponseValidator.validateUserUpdateSuccess(CommonSteps.response);
         LoggerUtil.logInfo("Validated user update response schema");
     }
@@ -279,11 +282,17 @@ public class TC5_UpdateUserSteps {
         // Check if this is a negative scenario by looking at the response code
         int responseCode = CommonSteps.response.jsonPath().getInt("responseCode");
         if (responseCode == 404) {
-            // Negative scenario - use error validation
+            // Negative scenario - use error schema validation
+            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+            LoggerUtil.logInfo("Validating user update error schema: " + schemaPath);
+            ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserUpdateError(CommonSteps.response);
             LoggerUtil.logInfo("Validated user update error response schema");
         } else {
-            // Positive scenario - use success validation
+            // Positive scenario - use user schema validation
+            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+            LoggerUtil.logInfo("Validating user update success schema: " + schemaPath);
+            ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserUpdateSuccess(CommonSteps.response);
             LoggerUtil.logInfo("Validated user update success response schema");
         }

@@ -79,36 +79,14 @@ public class ApiClient {
     
     // TC3: Create User Account
     public Response createUser(String endpoint, User user) {
-        LoggerUtil.logInfo("======== API REQUEST START ========");
-        LoggerUtil.logInfo("Method: POST");
-        LoggerUtil.logInfo("Endpoint: " + endpoint);
-        LoggerUtil.logInfo("Base URL: " + ConfigReader.get("base.url"));
-        LoggerUtil.logInfo("Request Body: " + user.toString());
-        LoggerUtil.logInfo("======== API REQUEST END ==========");
-        
+        LoggerUtil.logApiRequest("POST", endpoint, user.toString());
         long startTime = System.currentTimeMillis();
         
         Response response = RestAssured
                 .given()
                 .baseUri(ConfigReader.get("base.url"))
                 .contentType("application/x-www-form-urlencoded")
-                .formParam("name", user.getName())
-                .formParam("email", user.getEmail())
-                .formParam("password", user.getPassword())
-                .formParam("title", user.getTitle())
-                .formParam("birth_date", user.getBirth_date())
-                .formParam("birth_month", user.getBirth_month())
-                .formParam("birth_year", user.getBirth_year())
-                .formParam("firstname", user.getFirstname())
-                .formParam("lastname", user.getLastname())
-                .formParam("company", user.getCompany())
-                .formParam("address1", user.getAddress1())
-                .formParam("address2", user.getAddress2())
-                .formParam("country", user.getCountry())
-                .formParam("zipcode", user.getZipcode())
-                .formParam("state", user.getState())
-                .formParam("city", user.getCity())
-                .formParam("mobile_number", user.getMobile_number())
+                .formParams(user.toMap())
                 .when()
                 .post(endpoint);
         
@@ -181,23 +159,7 @@ public class ApiClient {
                 .given()
                 .baseUri(ConfigReader.get("base.url"))
                 .contentType("application/x-www-form-urlencoded")
-                .formParam("name", user.getName())
-                .formParam("email", user.getEmail())
-                .formParam("password", user.getPassword())
-                .formParam("title", user.getTitle())
-                .formParam("birth_date", user.getBirth_date())
-                .formParam("birth_month", user.getBirth_month())
-                .formParam("birth_year", user.getBirth_year())
-                .formParam("firstname", user.getFirstname())
-                .formParam("lastname", user.getLastname())
-                .formParam("company", user.getCompany())
-                .formParam("address1", user.getAddress1())
-                .formParam("address2", user.getAddress2())
-                .formParam("country", user.getCountry())
-                .formParam("zipcode", user.getZipcode())
-                .formParam("state", user.getState())
-                .formParam("city", user.getCity())
-                .formParam("mobile_number", user.getMobile_number())
+                .formParams(user.toMap())
                 .when()
                 .put(endpoint);
         

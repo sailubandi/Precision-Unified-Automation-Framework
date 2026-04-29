@@ -85,6 +85,7 @@ public class TC3_CreateUserSteps {
         LoggerUtil.logInfo("Validated 201 status code for user creation");
     }
 
+    
     @Then("the user creation response message should be {string}")
     public void the_user_creation_response_message_should_be(String expectedMessage) {
         String actualMessage = CommonSteps.response.jsonPath().getString("message");
@@ -105,6 +106,10 @@ public class TC3_CreateUserSteps {
 
     @Then("the response JSON schema should be valid for user creation")
     public void the_response_json_schema_should_be_valid_for_user_creation() {
+        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+        LoggerUtil.logInfo("Validating user creation schema: " + schemaPath);
+        ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
+        // Also run business logic validation
         ResponseValidator.validateUserCreationSuccess(CommonSteps.response);
         LoggerUtil.logInfo("Validated user creation response schema");
     }

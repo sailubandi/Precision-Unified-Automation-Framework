@@ -1,5 +1,8 @@
 package com.framework.api.pojo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * POJO class for User data
  * Represents user account information for API testing
@@ -170,6 +173,34 @@ public class User {
     
     public void setMobile_number(String mobile_number) {
         this.mobile_number = mobile_number;
+    }
+    
+    /**
+     * ✅ Convert User object → Map<String, String>
+     * Used for formParams in API requests
+     */
+    public Map<String, String> toMap() {
+        Map<String, String> map = new HashMap<>();
+
+        if (name != null) map.put("name", name);
+        if (email != null) map.put("email", email);
+        if (password != null) map.put("password", password);
+        if (title != null) map.put("title", title);
+        if (birth_date != null) map.put("birth_date", birth_date);
+        if (birth_month != null) map.put("birth_month", birth_month);
+        if (birth_year != null) map.put("birth_year", birth_year);
+        if (firstname != null) map.put("firstname", firstname);
+        if (lastname != null) map.put("lastname", lastname);
+        if (company != null) map.put("company", company);
+        if (address1 != null) map.put("address1", address1);
+        if (address2 != null) map.put("address2", address2);
+        if (country != null) map.put("country", country);
+        if (zipcode != null) map.put("zipcode", zipcode);
+        if (state != null) map.put("state", state);
+        if (city != null) map.put("city", city);
+        if (mobile_number != null) map.put("mobile_number", mobile_number);
+
+        return map;
     }
     
     @Override

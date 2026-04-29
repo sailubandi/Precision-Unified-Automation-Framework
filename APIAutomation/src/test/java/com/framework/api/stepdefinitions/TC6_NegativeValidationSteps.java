@@ -79,6 +79,9 @@ public class TC6_NegativeValidationSteps {
 
     @And("the response should contain error message about invalid email")
     public void the_response_should_contain_error_message_about_invalid_email() {
+        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+        LoggerUtil.logInfo("Validating invalid email error schema: " + schemaPath);
+        ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         ResponseValidator.validateErrorResponseSchema(CommonSteps.response);
         String responseBody = CommonSteps.response.getBody().asString().toLowerCase();
         assertThat("Should contain email error", responseBody, 
@@ -90,6 +93,9 @@ public class TC6_NegativeValidationSteps {
 
     @And("the response should contain error message about email already exists")
     public void the_response_should_contain_error_message_about_email_already_exists() {
+        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+        LoggerUtil.logInfo("Validating email already exists error schema: " + schemaPath);
+        ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         ResponseValidator.validateErrorResponseSchema(CommonSteps.response);
         String responseBody = CommonSteps.response.getBody().asString().toLowerCase();
         assertThat("Should contain email already exists error", responseBody, 
@@ -100,6 +106,9 @@ public class TC6_NegativeValidationSteps {
 
     @And("the response should contain empty search results")
     public void the_response_should_contain_empty_search_results() {
+        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/searchResultsSchema.json";
+        LoggerUtil.logInfo("Validating empty search results schema: " + schemaPath);
+        ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         ResponseValidator.validateSearchResultsSchema(CommonSteps.response);
         assertThat("Search results should be empty for invalid search", 
                  CommonSteps.response.jsonPath().getList("products").size(), 

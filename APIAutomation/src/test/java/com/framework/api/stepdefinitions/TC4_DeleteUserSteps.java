@@ -115,11 +115,17 @@ public class TC4_DeleteUserSteps {
         // Check if this is a negative scenario by looking at the response code
         int responseCode = CommonSteps.response.jsonPath().getInt("responseCode");
         if (responseCode == 404) {
-            // Negative scenario - use error validation
+            // Negative scenario - use error schema validation
+            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+            LoggerUtil.logInfo("Validating account deletion error schema: " + schemaPath);
+            ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserDeletionError(CommonSteps.response);
             LoggerUtil.logInfo("Validated account deletion error response schema");
         } else {
-            // Positive scenario - use success validation
+            // Positive scenario - use user schema validation
+            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+            LoggerUtil.logInfo("Validating account deletion success schema: " + schemaPath);
+            ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserDeletionSuccess(CommonSteps.response);
             LoggerUtil.logInfo("Validated account deletion success response schema");
         }

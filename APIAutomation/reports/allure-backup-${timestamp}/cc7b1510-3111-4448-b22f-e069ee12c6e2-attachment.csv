@@ -1,0 +1,3 @@
+key	value
+name	${test.user.update.name}
+phone	${test.user.update.phone}

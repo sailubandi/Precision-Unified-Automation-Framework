@@ -248,3 +248,274 @@
 21:50:13.384 [TestNG-test-Surefire test-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.product.search} -> /api/searchProduct
 21:50:13.815 [TestNG-test-Surefire test-1] INFO  utils.LoggerUtil - Validating empty search results schema: schemas/searchResultsSchema.json
 21:50:13.867 [TestNG-test-Surefire test-1] INFO  utils.LoggerUtil - Validating search results schema: schemas/searchResultsSchema.json
+21:55:32.270 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE STARTED ==========
+21:55:32.277 [main] INFO  utils.LoggerUtil - Total Tests: 1
+21:55:33.010 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get All Products List - TC1" ==========
+21:55:33.010 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:33.010 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:33.020 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:33.020120900
+21:55:33.020 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:33.868 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.products.list} -> /api/productsList
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: GET, Endpoint: /api/productsList
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Method: GET
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/productsList
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+21:55:33.880 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+21:55:36.217 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:36.218 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:36.218 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 2336ms
+21:55:36.253 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+21:55:36.255 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:36.263 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 2382ms
+21:55:36.263 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - GET Request completed for endpoint: ${api.endpoint.products.list}
+21:55:37.909 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating products list schema: schemas/productsSchema.json
+21:55:38.708 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:38.709 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get All Products List - TC1" ==========
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:38.837991200
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 5827ms
+21:55:38.837 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:38.839 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get All Products List - TC1" ==========
+21:55:38.844 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:38.853 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:38.853 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:38.853 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:38.853943700
+21:55:38.854 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:38.893 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.product.search} -> /api/searchProduct
+21:55:40.033 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating search results schema: schemas/searchResultsSchema.json
+21:55:40.144 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:40.144 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:40.154 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:40.154 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:40.154 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:40.155 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:40.155553100
+21:55:40.156 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1309ms
+21:55:40.156 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:40.156 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:40.157 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:40.158 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:40.158 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:40.159 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:40.159072900
+21:55:40.159 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:40.175 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.product.search} -> /api/searchProduct
+21:55:41.252 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating search results schema: schemas/searchResultsSchema.json
+21:55:41.345 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:41.345 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:41.353 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:41.354 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:41.354 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:41.355 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:41.354923300
+21:55:41.355 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1196ms
+21:55:41.355 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:41.355 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:41.359 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:41.359 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:41.359 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:41.360 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:41.360444800
+21:55:41.360 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:41.383 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.product.search} -> /api/searchProduct
+21:55:42.875 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating search results schema: schemas/searchResultsSchema.json
+21:55:42.921 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:42.921 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:42.925476600
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1566ms
+21:55:42.925 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:42.926 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Get Single Product Details with Different Search Terms - TC2" ==========
+21:55:42.926 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Create New User Account Successfully - TC3" ==========
+21:55:42.927 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:42.927 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:42.927 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:42.927476800
+21:55:42.928 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:42.939 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.user.create} -> /api/createAccount
+21:55:42.942 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:43.337 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:43.338 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:43.338 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 395ms
+21:55:43.338 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 201, "message": "User created!"}
+21:55:43.340 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:43.369 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Expected message: User created!, Actual message: User created!
+21:55:43.372 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating user creation schema: schemas/userSchema.json
+21:55:43.378 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating user creation success
+21:55:43.378 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:43.378 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:43.378 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:43.378 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:43.387 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 201, Actual: 201
+21:55:43.388 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 201
+21:55:43.397 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - User creation message: User created!
+21:55:43.397 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validated user creation response schema
+21:55:43.400 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Create New User Account Successfully - TC3" ==========
+21:55:43.400 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:43.401 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:43.401 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:43.401760700
+21:55:43.401 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 474ms
+21:55:43.401 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:43.401 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Create New User Account Successfully - TC3" ==========
+21:55:43.402 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Delete User Account Successfully - TC4" ==========
+21:55:43.403 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:43.403 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:43.404 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:43.404276200
+21:55:43.404 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:43.415 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Starting setup: Creating user for delete scenario
+21:55:43.415 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:43.415 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:43.780 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:43.780 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:43.780 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 365ms
+21:55:43.780 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 201, "message": "User created!"}
+21:55:43.780 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:43.785 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 0ms
+21:55:43.785 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - User creation successful for setup: testuser_1777479943415@test.com
+21:55:43.787 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.user.delete} -> /api/deleteAccount
+21:55:43.787 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+21:55:43.787 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Method: DELETE
+21:55:43.787 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/deleteAccount
+21:55:43.787 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+21:55:43.789 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Request Body: User{name='John Doe', email='testuser_1777479943415@test.com', password='Test123', title='Mr', birth_date='15', birth_month='January', birth_year='1990', firstname='John', lastname='Doe', company='Tech Inc', address1='123 Main St', address2='Apt 4B', country='USA', zipcode='10001', state='NY', city='New York', mobile_number='1234567890'}
+21:55:43.789 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+21:55:44.153 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:44.153 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:44.153 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 364ms
+21:55:44.155 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "message": "Account deleted!"}
+21:55:44.155 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:44.163 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:44.163 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:44.164 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validated 200 status code for user deletion
+21:55:44.177 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Expected message: Account deleted!, Actual message: Account deleted!
+21:55:44.185 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating account deletion success schema: schemas/userSchema.json
+21:55:44.190 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating user deletion success
+21:55:44.198 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:44.198 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:44.199 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:44.199 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:44.207 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:44.207 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:44.215 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - User deletion message: Account deleted!
+21:55:44.215 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validated account deletion success response schema
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Delete User Account Successfully - TC4" ==========
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:44.222018900
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 820ms
+21:55:44.222 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:44.223 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Delete User Account Successfully - TC4" ==========
+21:55:44.224 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Update User Account Successfully - TC5" ==========
+21:55:44.224 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:44.224 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:44.225 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:44.225541
+21:55:44.225 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:44.244 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Starting setup: Creating user for update scenario
+21:55:44.244 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:44.244 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:44.578 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:44.578 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:44.578 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 334ms
+21:55:44.579 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 201, "message": "User created!"}
+21:55:44.579 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:44.586 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Response - Status: 200, Response Time: 0ms
+21:55:44.586 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - User creation successful for setup: testuser_1777479944244@test.com
+21:55:44.594 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.user.update} -> /api/updateAccount
+21:55:44.597 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved config placeholder: ${test.user.update.name} -> John Updated
+21:55:44.597 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved config placeholder: ${test.user.update.phone} -> 9876543210
+21:55:44.597 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - STEP: Making API request to update user with new details
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST START ========
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Method: PUT
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Endpoint: /api/updateAccount
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Base URL: https://automationexercise.com
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Request Body: User{name='John Updated', email='testuser_1777479944244@test.com', password='Test123', title='Mr', birth_date='15', birth_month='January', birth_year='1990', firstname='John', lastname='Doe', company='Tech Inc', address1='123 Main St', address2='Apt 4B', country='USA', zipcode='10001', state='NY', city='New York', mobile_number='9876543210'}
+21:55:44.598 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API REQUEST END ==========
+21:55:45.208 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:45.209 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:45.209 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 610ms
+21:55:45.210 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 200, "message": "User updated!"}
+21:55:45.210 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:45.220 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - STEP: User update request completed
+21:55:45.226 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:45.226 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:45.226 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validated 200 status code for user update
+21:55:45.242 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Expected message: User updated!, Actual message: User updated!
+21:55:45.253 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating user update success schema: schemas/userSchema.json
+21:55:45.261 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating user update success
+21:55:45.279 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:45.279 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:45.279 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating status code. Expected: 200, Actual: 200
+21:55:45.280 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Status code matches: 200
+21:55:45.290 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating response code in body. Expected: 200, Actual: 200
+21:55:45.290 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - Response code in body matches: 200
+21:55:45.301 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validation PASSED - User update message: User updated!
+21:55:45.301 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validated user update success response schema
+21:55:45.304 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Update User Account Successfully - TC5" ==========
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:45.305779700
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1080ms
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:45.305 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Update User Account Successfully - TC5" ==========
+21:55:45.306 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Negative Validation - Invalid Email - TC6" ==========
+21:55:45.306 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:45.306 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:45.307 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:45.306905500
+21:55:45.307 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:45.329 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.user.create} -> /api/createAccount
+21:55:45.329 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:45.691 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:45.691 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:45.691 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 362ms
+21:55:45.693 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 400, "message": "Email already exists!"}
+21:55:45.693 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:45.704 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating invalid email error schema: schemas/errorResponseSchema.json
+21:55:45.743 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating error response schema: schemas/errorResponseSchema.json
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Negative Validation - Invalid Email - TC6" ==========
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:45.769285500
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 462ms
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Negative Validation - Invalid Email - TC6" ==========
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Negative Validation - Missing Required Fields - TC6" ==========
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:45.769844100
+21:55:45.769 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:45.781 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.user.create} -> /api/createAccount
+21:55:45.782 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - API Request - Method: POST, Endpoint: /api/createAccount
+21:55:46.205 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE START =======
+21:55:46.205 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Status Code: 200
+21:55:46.205 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Time: 423ms
+21:55:46.206 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Response Body: {"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}
+21:55:46.206 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ======== API RESPONSE END ==========
+21:55:46.218 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating email already exists error schema: schemas/errorResponseSchema.json
+21:55:46.246 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating error response schema: schemas/errorResponseSchema.json
+21:55:46.267 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Negative Validation - Missing Required Fields - TC6" ==========
+21:55:46.267 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:46.267 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:46.267 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:46.267686500
+21:55:46.268 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 498ms
+21:55:46.268 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:46.268 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Negative Validation - Missing Required Fields - TC6" ==========
+21:55:46.269 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== STARTING TEST: "Negative Validation - Invalid Search Parameter - TC6" ==========
+21:55:46.269 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:46.269 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Description: Runs Cucumber Scenarios
+21:55:46.269 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Started At: 2026-04-29T21:55:46.269699800
+21:55:46.269 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:46.278 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Resolved endpoint placeholder: ${api.endpoint.product.search} -> /api/searchProduct
+21:55:47.545 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating empty search results schema: schemas/searchResultsSchema.json
+21:55:47.592 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Validating search results schema: schemas/searchResultsSchema.json
+21:55:47.642 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== TEST PASSED: "Negative Validation - Invalid Search Parameter - TC6" ==========
+21:55:47.642 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Method: runScenario
+21:55:47.643 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Status: PASSED
+21:55:47.643 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Test Completed At: 2026-04-29T21:55:47.643436200
+21:55:47.643 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - Execution Time: 1373ms
+21:55:47.643 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - =================================================
+21:55:47.643 [TestNG-test-API Tests-1] INFO  utils.LoggerUtil - ========== FINISHED TEST: "Negative Validation - Invalid Search Parameter - TC6" ==========
+21:55:47.735 [main] INFO  utils.LoggerUtil - ========== API TEST SUITE FINISHED ==========
+21:55:47.735 [main] INFO  utils.LoggerUtil - Passed: 10
+21:55:47.736 [main] INFO  utils.LoggerUtil - Failed: 0
+21:55:47.736 [main] INFO  utils.LoggerUtil - Skipped: 0
+21:55:47.737 [main] INFO  utils.LoggerUtil - Success Rate: 100.00%

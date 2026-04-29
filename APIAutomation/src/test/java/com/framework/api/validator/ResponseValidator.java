@@ -4,6 +4,7 @@ import io.restassured.response.Response;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import org.testng.Assert;
 import java.io.File;
+import java.io.InputStream;
 import java.util.List;
 import utils.LoggerUtil;
 
@@ -73,8 +74,19 @@ public class ResponseValidator {
 
     // JSON Schema validation methods
     public static void validateSchema(Response response, String schemaPath) {
-        response.then().assertThat()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File(schemaPath)));
+        try {
+            // Load schema from classpath resources
+            InputStream schemaStream = ResponseValidator.class.getClassLoader().getResourceAsStream(schemaPath);
+            if (schemaStream == null) {
+                throw new RuntimeException("Schema file not found in classpath: " + schemaPath);
+            }
+            
+            response.then().assertThat()
+                    .body(JsonSchemaValidator.matchesJsonSchema(schemaStream));
+        } catch (Exception e) {
+            LoggerUtil.logError("Schema validation failed: " + e.getMessage());
+            throw new RuntimeException("Schema validation failed for: " + schemaPath, e);
+        }
     }
 
     public static void validateProductsListSchema(Response response) {

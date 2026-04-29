@@ -87,7 +87,7 @@ public class CommonSteps {
 
     @And("the response JSON schema should be valid for products list")
     public void the_response_json_schema_should_be_valid_for_products_list() {
-        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/productsSchema.json";
+        String schemaPath = "schemas/productsSchema.json";
         LoggerUtil.logInfo("Validating products list schema: " + schemaPath);
         ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         // Also run business logic validation
@@ -102,7 +102,7 @@ public class CommonSteps {
 
     @And("the response JSON schema should be valid for search results")
     public void the_response_json_schema_should_be_valid_for_search_results() {
-        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/searchResultsSchema.json";
+        String schemaPath = "schemas/searchResultsSchema.json";
         LoggerUtil.logInfo("Validating search results schema: " + schemaPath);
         ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         // Also run business logic validation
@@ -111,7 +111,7 @@ public class CommonSteps {
 
     @And("the response JSON schema should be valid for error response")
     public void the_response_json_schema_should_be_valid_for_error_response() {
-        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+        String schemaPath = "schemas/errorResponseSchema.json";
         LoggerUtil.logInfo("Validating error response schema: " + schemaPath);
         ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         // Also run business logic validation

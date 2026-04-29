@@ -283,14 +283,14 @@ public class TC5_UpdateUserSteps {
         int responseCode = CommonSteps.response.jsonPath().getInt("responseCode");
         if (responseCode == 404) {
             // Negative scenario - use error schema validation
-            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/errorResponseSchema.json";
+            String schemaPath = "schemas/errorResponseSchema.json";
             LoggerUtil.logInfo("Validating user update error schema: " + schemaPath);
             ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserUpdateError(CommonSteps.response);
             LoggerUtil.logInfo("Validated user update error response schema");
         } else {
             // Positive scenario - use user schema validation
-            String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+            String schemaPath = "schemas/userSchema.json";
             LoggerUtil.logInfo("Validating user update success schema: " + schemaPath);
             ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
             ResponseValidator.validateUserUpdateSuccess(CommonSteps.response);

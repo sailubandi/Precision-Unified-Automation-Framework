@@ -106,7 +106,7 @@ public class TC3_CreateUserSteps {
 
     @Then("the response JSON schema should be valid for user creation")
     public void the_response_json_schema_should_be_valid_for_user_creation() {
-        String schemaPath = System.getProperty("user.dir") + "/APIAutomation/src/test/resources/schemas/userSchema.json";
+        String schemaPath = "schemas/userSchema.json";
         LoggerUtil.logInfo("Validating user creation schema: " + schemaPath);
         ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         // Also run business logic validation

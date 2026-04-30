@@ -20,7 +20,7 @@ Feature: TC6 - Negative Validation
       | name | email | password | title | birth_date | birth_month | birth_year | firstname | lastname | company | address1 | country | zipcode | state | city | mobile_number |
       |      |       |          |        |            |             |             |            |           |          |          |         |         |        |       |              |
     Then the response status code should be 200
-    And the response should contain error message about email already exists
+    And the response should contain error message about missing required fields
     And the response JSON schema should be valid for error response
 
   @TC6

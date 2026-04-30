@@ -1,42 +1,41 @@
 package com.framework.api.builder;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import config.ConfigReader;
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.RestAssured;
 
 /**
  * Request Builder for creating REST API requests with fluent interface
- * Provides abstraction over RestAssured RequestSpecBuilder
+ * Uses direct RestAssured approach to avoid assertionClosure issues
  */
 public class RequestBuilder {
     
-    private RequestSpecBuilder requestSpecBuilder;
-    
-    static {
-        // Initialize RestAssured static configuration once
-        RestAssured.baseURI = ConfigReader.get("base.url");
-    }
-    
+    private String baseUrl;
+    private Map<String, String> headers = new HashMap<>();
+    private Map<String, String> queryParams = new HashMap<>();
+    private Map<String, String> formParams = new HashMap<>();
+    private String contentType;
+    private Object body;
+        
     public RequestBuilder() {
-        this.requestSpecBuilder = new RequestSpecBuilder();
-        setBaseConfiguration();
-    }
-    
-    /**
-     * Sets base URL and common configuration
-     */
-    private void setBaseConfiguration() {
-        requestSpecBuilder.setBaseUri(ConfigReader.get("base.url"));
+        this.baseUrl = ConfigReader.get("base.url");
+        // Set default content type from configuration
+        this.contentType = ConfigReader.get("api.header.content.type.json");
+        // Set default headers from configuration
+        String acceptHeader = ConfigReader.get("api.header.accept");
+        if (acceptHeader != null && !acceptHeader.isEmpty()) {
+            this.headers.put("Accept", acceptHeader);
+        }
     }
     
     /**
      * Sets content type to JSON
      */
     public RequestBuilder setJsonContentType() {
-        requestSpecBuilder.setContentType("application/json");
+        this.contentType = ConfigReader.get("api.header.content.type.json");
         return this;
     }
     
@@ -44,7 +43,7 @@ public class RequestBuilder {
      * Sets content type to form-urlencoded
      */
     public RequestBuilder setFormContentType() {
-        requestSpecBuilder.setContentType("application/x-www-form-urlencoded");
+        this.contentType = ConfigReader.get("api.header.content.type.form");
         return this;
     }
     
@@ -52,7 +51,7 @@ public class RequestBuilder {
      * Adds form parameter
      */
     public RequestBuilder addFormParam(String key, String value) {
-        requestSpecBuilder.addFormParam(key, value);
+        this.formParams.put(key, value);
         return this;
     }
     
@@ -60,9 +59,7 @@ public class RequestBuilder {
      * Adds multiple form parameters
      */
     public RequestBuilder addFormParams(Map<String, String> params) {
-        for (Map.Entry<String, String> entry : params.entrySet()) {
-            requestSpecBuilder.addFormParam(entry.getKey(), entry.getValue());
-        }
+        this.formParams.putAll(params);
         return this;
     }
     
@@ -70,7 +67,7 @@ public class RequestBuilder {
      * Adds query parameter
      */
     public RequestBuilder addQueryParam(String key, String value) {
-        requestSpecBuilder.addQueryParam(key, value);
+        this.queryParams.put(key, value);
         return this;
     }
     
@@ -78,7 +75,7 @@ public class RequestBuilder {
      * Adds header
      */
     public RequestBuilder addHeader(String key, String value) {
-        requestSpecBuilder.addHeader(key, value);
+        this.headers.put(key, value);
         return this;
     }
     
@@ -86,14 +83,42 @@ public class RequestBuilder {
      * Sets request body
      */
     public RequestBuilder setBody(Object body) {
-        requestSpecBuilder.setBody(body);
+        this.body = body;
         return this;
     }
     
     /**
-     * Builds the RequestSpecification
+     * Builds the RequestSpecification using direct RestAssured approach
      */
     public RequestSpecification build() {
-        return requestSpecBuilder.build();
+        RequestSpecification request = RestAssured.given();
+        
+        // Set base URI
+        request.baseUri(baseUrl);
+        
+        // Set content type
+        request.contentType(contentType);
+        
+        // Add headers
+        for (Map.Entry<String, String> header : headers.entrySet()) {
+            request.header(header.getKey(), header.getValue());
+        }
+        
+        // Add query parameters
+        for (Map.Entry<String, String> param : queryParams.entrySet()) {
+            request.queryParam(param.getKey(), param.getValue());
+        }
+        
+        // Add form parameters
+        for (Map.Entry<String, String> param : formParams.entrySet()) {
+            request.formParam(param.getKey(), param.getValue());
+        }
+        
+        // Set body if present
+        if (body != null) {
+            request.body(body);
+        }
+        
+        return request;
     }
 }

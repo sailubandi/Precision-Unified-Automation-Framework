@@ -2,29 +2,24 @@ package client;
 
 import java.util.Map;
 
+import com.framework.api.builder.RequestBuilder;
 import com.framework.api.pojo.User;
 
 import config.ConfigReader;
 import io.qameta.allure.Allure;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import utils.LoggerUtil;
-
+//RequestBuilder (Layer we added) → RequestSpecBuilder (RestAssured) → RequestSpecification (Executable)
 /**
- * Enhanced API client with RestAssured direct usage
+ * Enhanced API client using RequestBuilder for proper layered architecture
  */
 public class ApiClient {
     
-    private RequestSpecification requestSpec;
-    
-    static {
-        // Initialize RestAssured static configuration once
-        RestAssured.baseURI = ConfigReader.get("base.url");
-    }
+    private RequestBuilder requestBuilder;
     
     public ApiClient() {
-        this.requestSpec = RestAssured.given();
+        this.requestBuilder = new RequestBuilder();
     }
     
     public String getBaseUrl() {
@@ -36,15 +31,12 @@ public class ApiClient {
         LoggerUtil.logInfo("======== API REQUEST START ========");
         LoggerUtil.logInfo("Method: GET");
         LoggerUtil.logInfo("Endpoint: " + endpoint);
-        LoggerUtil.logInfo("Base URL: " + ConfigReader.get("base.url"));
+        LoggerUtil.logInfo("Base URL: " + getBaseUrl());
         LoggerUtil.logInfo("======== API REQUEST END ==========");
         
         long startTime = System.currentTimeMillis();
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .when()
-                .get(endpoint);
+        RequestSpecification request = requestBuilder.build();
+        Response response = request.get(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         LoggerUtil.logInfo("======== API RESPONSE START =======");
@@ -68,16 +60,12 @@ public class ApiClient {
     
     // TC2: Get Single Product Details with Search
     public Response postWithSearch(String endpoint, String searchTerm) {
-        return RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParam("search_product", searchTerm)
-                .when()
-                .post(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParam("search_product", searchTerm)
+                .build();
+        
+        return request.post(endpoint);
     }
     
     // TC3: Create User Account
@@ -85,17 +73,12 @@ public class ApiClient {
         LoggerUtil.logApiRequest("POST", endpoint, user.toString());
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams(user.toMap())
-                .when()
-                .post(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(user.toMap())
+                .build();
         
+        Response response = request.post(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         LoggerUtil.logInfo("======== API RESPONSE START =======");
@@ -118,24 +101,18 @@ public class ApiClient {
         LoggerUtil.logInfo("======== API REQUEST START ========");
         LoggerUtil.logInfo("Method: DELETE");
         LoggerUtil.logInfo("Endpoint: " + endpoint);
-        LoggerUtil.logInfo("Base URL: " + ConfigReader.get("base.url"));
+        LoggerUtil.logInfo("Base URL: " + getBaseUrl());
         LoggerUtil.logInfo("Request Body: " + user.toString());
         LoggerUtil.logInfo("======== API REQUEST END ==========");
         
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParam("email", user.getEmail())
-                .formParam("password", user.getPassword())
-                .when()
-                .delete(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(user.toMap())
+                .build();
         
+        Response response = request.delete(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         LoggerUtil.logInfo("======== API RESPONSE START =======");
@@ -158,23 +135,18 @@ public class ApiClient {
         LoggerUtil.logInfo("======== API REQUEST START ========");
         LoggerUtil.logInfo("Method: PUT");
         LoggerUtil.logInfo("Endpoint: " + endpoint);
-        LoggerUtil.logInfo("Base URL: " + ConfigReader.get("base.url"));
+        LoggerUtil.logInfo("Base URL: " + getBaseUrl());
         LoggerUtil.logInfo("Request Body: " + user.toString());
         LoggerUtil.logInfo("======== API REQUEST END ==========");
         
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams(user.toMap())
-                .when()
-                .put(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(user.toMap())
+                .build();
         
+        Response response = request.put(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         LoggerUtil.logInfo("======== API RESPONSE START =======");
@@ -194,33 +166,24 @@ public class ApiClient {
     
     // Legacy methods for backward compatibility
     public Response createUser(String endpoint, Map<String, String> userData) {
-        return RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams(userData)
-                .when()
-                .post(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(userData)
+                .build();
+        
+        return request.post(endpoint);
     }
     
     public Response deleteUser(String endpoint, Map<String, String> credentials) {
         LoggerUtil.logApiRequest("DELETE", endpoint, credentials.toString());
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams(credentials)
-                .when()
-                .delete(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(credentials)
+                .build();
         
+        Response response = request.delete(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         // Log response details
@@ -238,17 +201,12 @@ public class ApiClient {
         LoggerUtil.logApiRequest("PUT", endpoint, userData.toString());
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams(userData)
-                .when()
-                .put(endpoint)
-                .then()
-                .extract()
-                .response();
+        RequestSpecification request = requestBuilder
+                .setFormContentType()
+                .addFormParams(userData)
+                .build();
         
+        Response response = request.put(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
         // Log response details
@@ -264,95 +222,31 @@ public class ApiClient {
     
     // Legacy static methods for backward compatibility
     public static Response getStatic(String endpoint) {
+        RequestBuilder staticBuilder = new RequestBuilder();
+        RequestSpecification request = staticBuilder.build();
+        
         LoggerUtil.logApiRequest("GET", endpoint, null);
         long startTime = System.currentTimeMillis();
         
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .when()
-                .get(endpoint)
-                .then()
-                .extract()
-                .response();
-        
+        Response response = request.get(endpoint);
         long responseTime = System.currentTimeMillis() - startTime;
         
-        // Log response details
-        LoggerUtil.logApiResponse(response.getStatusCode(), responseTime);
-        LoggerUtil.logDebug("GET Response: " + response.getBody().asString());
+        LoggerUtil.logInfo("======== API RESPONSE START =======");
+        LoggerUtil.logInfo("Status Code: " + response.getStatusCode());
+        LoggerUtil.logInfo("Response Time: " + responseTime + "ms");
+        LoggerUtil.logInfo("Response Body: " + response.getBody().asString());
+        LoggerUtil.logInfo("======== API RESPONSE END ==========");
         
-        // Attach request/response to Allure
-        Allure.addAttachment("API Request", "application/json", "GET " + endpoint);
-        Allure.addAttachment("API Response", "application/json", response.getBody().asString());
-        
-        return response;
-    }
-    
-    public static Response postStatic(String endpoint, Object body) {
-        LoggerUtil.logApiRequest("POST", endpoint, body);
-        long startTime = System.currentTimeMillis();
-        
-        Response response = RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams((Map<String, String>) body)
-                .when()
-                .post(endpoint)
-                .then()
-                .extract()
-                .response();
-        
-        long responseTime = System.currentTimeMillis() - startTime;
-        
-        // Log response details
-        LoggerUtil.logApiResponse(response.getStatusCode(), responseTime);
-        LoggerUtil.logDebug("POST Response: " + response.getBody().asString());
-        
-        // Attach request/response to Allure
-        Allure.addAttachment("API Request", "application/json", "POST " + endpoint + " with body: " + body);
-        Allure.addAttachment("API Response", "application/json", response.getBody().asString());
+        // Add Allure attachment for response
+        try {
+            String responseBody = response.getBody().asString();
+            Allure.addAttachment("Endpoint", "text/plain", endpoint);
+            Allure.addAttachment("Status Code", "text/plain", String.valueOf(response.getStatusCode()));
+            Allure.addAttachment("API Response", "application/json", responseBody);
+        } catch (Exception e) {
+            LoggerUtil.logWarning("Could not attach response to Allure: " + e.getMessage());
+        }
         
         return response;
-    }
-    
-    public static Response postJsonStatic(String endpoint, Object body) {
-        return RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/json")
-                .body(body)
-                .when()
-                .post(endpoint)
-                .then()
-                .extract()
-                .response();
-    }
-    
-    public static Response putStatic(String endpoint, Object body) {
-        return RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams((Map<String, String>) body)
-                .when()
-                .put(endpoint)
-                .then()
-                .extract()
-                .response();
-    }
-    
-    public static Response deleteStatic(String endpoint, Object body) {
-        return RestAssured
-                .given()
-                .baseUri(ConfigReader.get("base.url"))
-                .contentType("application/x-www-form-urlencoded")
-                .formParams((Map<String, String>) body)
-                .when()
-                .delete(endpoint)
-                .then()
-                .extract()
-                .response();
     }
 }

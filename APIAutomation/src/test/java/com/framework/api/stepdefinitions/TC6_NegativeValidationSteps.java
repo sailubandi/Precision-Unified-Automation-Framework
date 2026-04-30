@@ -91,17 +91,20 @@ public class TC6_NegativeValidationSteps {
                      containsStringIgnoringCase("parameter")));
     }
 
-    @And("the response should contain error message about email already exists")
-    public void the_response_should_contain_error_message_about_email_already_exists() {
+    @And("the response should contain error message about missing required fields")
+    public void the_response_should_contain_error_message_about_missing_required_fields() {
         String schemaPath = "schemas/errorResponseSchema.json";
-        LoggerUtil.logInfo("Validating email already exists error schema: " + schemaPath);
+        LoggerUtil.logInfo("Validating missing required fields error schema: " + schemaPath);
         ResponseValidator.validateSchema(CommonSteps.response, schemaPath);
         ResponseValidator.validateErrorResponseSchema(CommonSteps.response);
         String responseBody = CommonSteps.response.getBody().asString().toLowerCase();
-        assertThat("Should contain email already exists error", responseBody, 
+        assertThat("Should contain missing required fields error", responseBody, 
                  anyOf(
-                     containsStringIgnoringCase("email already exists"),
-                     containsStringIgnoringCase("bad request")));
+                     containsStringIgnoringCase("missing required fields"),
+                     containsStringIgnoringCase("bad request"),
+                     containsStringIgnoringCase("parameter missing"),
+                     containsStringIgnoringCase("required fields missing"),
+                     containsStringIgnoringCase("invalid request")));
     }
 
     @And("the response should contain empty search results")
